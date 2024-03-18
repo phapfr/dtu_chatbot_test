@@ -41,15 +41,8 @@
     }
 }
 
-@media screen and (max-width: 375px) {
-    .chat-list {
-        height: 65%;
-        padding-bottom: 20px;
-    }
-}
-
 @media screen and (max-width: 450px) {
     .chat-content .header {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
