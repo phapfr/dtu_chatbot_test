@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+/* Common */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* ----- bar-button ----- */
+.bar-button {
+    display: none;
+    font-size: 25px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+/* ----- main ----- */
+.main {
+    display: flex;
+    height: 100vh;
+}
+
+/* ----- sidebar, chat-content ----- */
+
+.sidebar,
+.chat-content {
+    padding: 15px;
+}
+
+/* ----- sidebar ----- */
+.sidebar {
+    width: 20%;
+    height: 100vh;
+    background-color: #eee;
+    overflow: auto;
+}
+
+/* .sidebar div {
+    position: fixed;
+    top: 10;
+    left: 10;
+    width: 18%;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+    background-color: #eee;
+}
+
+.sidebar div span {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #555;
+}
+.sidebar div img {
+    width: 80px;
+} */
+
+.sidebar a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+    padding: 10px;
+    color: #111;
+    border-radius: 5px;
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+.sidebar .history {
+    margin-top: 60px;
+}
+
+/* ----- chat-content ----- */
+.chat-content {
+    position: absolute;
+    right: 0;
+    width: 80%;
+    padding: 0 10%;
+    background-color: #fff;
+    height: 100vh;
+    overflow: auto;
+}
+
+.chat-content .header {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #666;
+    padding: 10px;
+    text-align: center;
+}
+
+/* --- chat-list --- */
+.chat-list {
+    width: 100%;
+    height: 75%;
+    overflow: auto;
+}
+
+.chat-list .user,
+.bot {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    gap: 10px;
+}
+
+.chat-list img {
+    width: 40px;
+}
+
+.chat-list span {
+    text-align: justify;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #000;
+    line-height: 1.4;
+}
+
+.chat-list .user {
+    background-color: #efefef;
+    border-radius: 10px;
+}
+
+/* ----- chat-search ----- */
+.chat-search {
+    position: fixed;
+    bottom: 2%;
+    right: 10%;
+    width: 60%;
+}
+
+.chat-search .search {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 0.5px solid #ccc;
+    border-radius: 8px;
+    padding: 20px 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.chat-search .search:focus {
+    outline: 0.5px solid #1ae5be;
+}
+
+.search-btn {
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    font-size: 20px;
+    background-color: #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}

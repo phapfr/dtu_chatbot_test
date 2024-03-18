@@ -1,0 +1,45 @@
+@media screen and (max-width: 1200px) {
+    .sidebar {
+        width: 30%;
+    }
+
+    .chat-content {
+        padding: 0 5%;
+        width: 70%;
+    }
+
+    .chat-search {
+        right: 5%;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .bar-button {
+        display: inline-block;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .chat-content {
+        width: 100%;
+    }
+
+    .chat-list {
+        height: 70%;
+    }
+
+    .chat-search {
+        right: 5%;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .chat-list {
+        height: 65%;
+        padding-bottom: 20px;
+    }
+}
