@@ -209,4 +209,5 @@ a {
 
 .sidebar:hover {
     overflow: auto;
+    background-color: #1ae5be;
 }
