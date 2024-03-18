@@ -12,6 +12,10 @@
         right: 5%;
         width: 60%;
     }
+
+    .sidebar div {
+        width: 30%;
+    }
 }
 
 @media screen and (max-width: 800px) {

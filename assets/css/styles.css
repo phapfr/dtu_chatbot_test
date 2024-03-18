@@ -55,14 +55,10 @@ a {
     overflow: auto;
 }
 
-/* .sidebar div {
+.sidebar div {
     position: fixed;
-    top: 10;
-    left: 10;
-    width: 18%;
-    display: flex;
-    padding: 10px;
-    gap: 10px;
+    top: 5px;
+    width: 20%;
     background-color: #eee;
 }
 
@@ -70,12 +66,11 @@ a {
     font-size: 2rem;
     font-weight: 700;
     line-height: 1.5;
-    color: #555;
+    color: #c7393f;
 }
 .sidebar div img {
-    width: 80px;
-} */
-
+    width: 220px;
+}
 .sidebar a {
     display: block;
     white-space: nowrap;
@@ -93,7 +88,7 @@ a {
 }
 
 .sidebar .history {
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 /* ----- chat-content ----- */
