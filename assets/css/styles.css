@@ -62,15 +62,10 @@ a {
     background-color: #eee;
 }
 
-.sidebar div span {
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.5;
-    color: #c7393f;
-}
-.sidebar div img {
+.sidebar .logo {
     width: 220px;
 }
+
 .sidebar a {
     display: block;
     white-space: nowrap;
