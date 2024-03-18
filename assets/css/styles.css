@@ -52,12 +52,13 @@ a {
     width: 20%;
     height: 100vh;
     overflow: auto;
+    background-color: #f9f9f9;
 }
 
 .sidebar .logo {
     position: fixed;
     top: 5px;
-    background-color: #fff;
+    background-color: #f9f9f9;
     width: 18%;
 }
 
@@ -99,7 +100,7 @@ a {
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: rgb(245, 245, 245);
+    background-color: #f9f9f9;
 }
 
 .sidebar .account img {
@@ -111,6 +112,15 @@ a {
     font-size: 1.6rem;
     font-weight: 600;
     color: #111;
+}
+
+.sidebar {
+    overflow: hidden;
+    transition: 1s;
+}
+
+.sidebar:hover {
+    overflow: auto;
 }
 
 /* ----- chat-content ----- */
@@ -200,14 +210,4 @@ a {
 
 .non {
     height: 15%;
-}
-
-.sidebar {
-    overflow: hidden;
-    transition: 1s;
-}
-
-.sidebar:hover {
-    overflow: auto;
-    background-color: #1ae5be;
 }
