@@ -55,15 +55,11 @@ a {
     overflow: auto;
 }
 
-.sidebar div {
+.sidebar .logo {
     position: fixed;
     top: 5px;
-    width: 20%;
     background-color: #eee;
-}
-
-.sidebar .logo {
-    width: 50px;
+    width: 18%;
 }
 
 .sidebar a {
