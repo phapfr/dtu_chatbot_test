@@ -51,14 +51,13 @@ a {
 .sidebar {
     width: 20%;
     height: 100vh;
-    background-color: #eee;
     overflow: auto;
 }
 
 .sidebar .logo {
     position: fixed;
     top: 5px;
-    background-color: #eee;
+    background-color: #fff;
     width: 18%;
 }
 
@@ -66,20 +65,52 @@ a {
     display: block;
     white-space: nowrap;
     overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.5;
     padding: 10px;
-    color: #111;
+    color: #666;
     border-radius: 5px;
 }
 
 .sidebar a:hover {
     background-color: #ddd;
+    color: #333;
+    transition: 0.5s;
+}
+
+.sidebar .subtitle {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #7f8c8d;
+    padding: 5px 10px 0;
 }
 
 .sidebar .history {
     margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.sidebar .account {
+    position: absolute;
+    width: 18%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+.sidebar .account img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.sidebar .account span {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #111;
 }
 
 /* ----- chat-content ----- */
@@ -169,4 +200,13 @@ a {
 
 .non {
     height: 15%;
+}
+
+.sidebar {
+    overflow: hidden;
+    transition: 1s;
+}
+
+.sidebar:hover {
+    overflow: auto;
 }

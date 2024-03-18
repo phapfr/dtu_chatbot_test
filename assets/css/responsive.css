@@ -13,7 +13,8 @@
         width: 60%;
     }
 
-    .sidebar .logo {
+    .sidebar .logo,
+    .sidebar .account {
         width: 27%;
     }
 }
@@ -48,5 +49,9 @@
 
     .chat-list {
         height: 75%;
+    }
+
+    .bar-button {
+        display: inline-block;
     }
 }
