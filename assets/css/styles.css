@@ -62,7 +62,7 @@ a {
     width: 18%;
 }
 
-.sidebar ul a,
+/* .sidebar ul a,
 .sidebar .account {
     display: block;
     white-space: nowrap;
@@ -74,7 +74,7 @@ a {
     padding: 10px;
     color: #666;
     border-radius: 5px;
-}
+} */
 
 .sidebar a:hover {
     background-color: #ddd;
