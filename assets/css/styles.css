@@ -62,7 +62,7 @@ a {
     width: 18%;
 }
 
-.sidebar a {
+.sidebar li a {
     display: block;
     white-space: nowrap;
     overflow: hidden;
@@ -211,4 +211,121 @@ a {
     background-color: #ddd;
     padding: 10px;
     border-radius: 5px;
+}
+
+/* ----------- Sign in ----------- */
+
+.sign-in-up {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-in-up-box .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.sign-in-up-box .logo img {
+    width: 400px;
+}
+
+.sign-in-up-box .title {
+    margin: 10px 0 5px;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #222;
+    text-align: center;
+}
+
+.sign-in-up-box .group p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #333;
+}
+
+.sign-in-up-box .group .name,
+.sign-in-up-box .group .email,
+.sign-in-up-box .group .password {
+    font-size: 1.4rem;
+    width: 100%;
+    margin: 5px 0 15px;
+    padding: 15px 15px 15px 33px;
+    background-color: #eee;
+    border: unset;
+    border-radius: 5px;
+}
+
+.sign-in-up-box .group .name::placeholder,
+.sign-in-up-box .group .email::placeholder,
+.sign-in-up-box .group .password::placeholder {
+    color: #aaa;
+}
+
+.sign-in-up-box .group .password {
+    margin-bottom: 6px;
+}
+
+.sign-in-up-box .group .name:focus,
+.sign-in-up-box .group .email:focus,
+.sign-in-up-box .group .password:focus {
+    outline: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.sign-in-up-box .group .box,
+.sign-in-up-box .group .box {
+    position: relative;
+}
+
+.sign-in-up-box .group .box i,
+.sign-in-up-box .group .box i {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+    color: #999;
+}
+
+.sign-in-up-box .forgot-passowrd {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #108cff;
+}
+
+/* --- Sign in button --- */
+.sign-in-up-box .sign-in-up-btn {
+    display: block;
+    margin: 8px 0;
+    background-color: #108cff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.sign-in-up-box .desc {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #333;
+    line-height: 1.5;
+}
+.sign-in-up-box .sign-in-up-link {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #108cff;
+}
+
+.sign-in-up-box .create-account {
+    text-align: center;
+    font-size: 3.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #222;
 }
