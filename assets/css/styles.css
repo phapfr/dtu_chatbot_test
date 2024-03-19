@@ -62,7 +62,8 @@ a {
     width: 18%;
 }
 
-.sidebar a:not(:first-child) {
+.sidebar ul a,
+.sidebar .account {
     display: block;
     white-space: nowrap;
     overflow: hidden;
