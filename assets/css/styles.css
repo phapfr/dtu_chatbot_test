@@ -230,10 +230,10 @@ a {
 }
 
 .sign-in-up {
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
 
 .sign-in-up-box .logo {
