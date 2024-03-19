@@ -42,6 +42,25 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .sign-in-up-box {
+        width: 90%;
+    }
+
+    .sign-in-up-box .logo {
+        display: none;
+    }
+
+    .sign-in-up-box .logo_responsives {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sign-in-up-box .logo_responsives img {
+        width: 250px;
+    }
+}
+
 @media screen and (max-width: 450px) {
     .chat-content .header {
         font-size: 2.5rem;
