@@ -11,6 +11,17 @@ body {
     font-family: "Source Sans Pro", sans-serif;
 }
 
+/* Common */
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+:root {
+    --primary-color: #108cff;
+}
+
+/* ----- scrollbar ----- */
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -18,12 +29,6 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: #ccc;
     border-radius: 20px;
-}
-
-/* Common */
-a {
-    text-decoration: none;
-    color: #000;
 }
 
 /* ----- bar-button ----- */
@@ -276,21 +281,19 @@ a {
     color: #aaa;
 }
 
-.sign-in-up-box .group .password {
-    margin-bottom: 6px;
-}
-
 .sign-in-up-box .group input:focus {
     outline: 1px solid #ddd;
     background-color: #fff;
 }
 
-.sign-in-up-box .group .box,
+.sign-in-up-box .group .password {
+    margin-bottom: 6px;
+}
+
 .sign-in-up-box .group .box {
     position: relative;
 }
 
-.sign-in-up-box .group .box i,
 .sign-in-up-box .group .box i {
     position: absolute;
     top: 19px;
@@ -302,14 +305,14 @@ a {
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.5;
-    color: #108cff;
+    color: var(--primary-color);
 }
 
 /* --- Sign in button --- */
 .sign-btn {
     display: block;
     margin: 8px 0;
-    background-color: #108cff;
+    background-color: var(--primary-color);
     text-align: center;
     padding: 15px;
     border-radius: 10px;
@@ -328,7 +331,7 @@ a {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.5;
-    color: #108cff;
+    color: var(--primary-color);
 }
 
 .sign-in-up-box .create-account {
