@@ -56,15 +56,36 @@ a {
 .sidebar {
     width: 20%;
     height: 100vh;
-    overflow: auto;
+    overflow: hidden;
     background-color: #f9f9f9;
 }
 
-.sidebar .logo {
+.sidebar:hover {
+    overflow: auto;
+}
+
+.sidebar .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
-    top: 5px;
     width: 18%;
     background-color: #f9f9f9;
+}
+
+.sidebar .header a:hover {
+    background-color: unset;
+}
+
+.sidebar .header .logo {
+    width: 100%;
+}
+
+.sidebar .header .new_chat i {
+    font-size: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .sidebar ul a {
