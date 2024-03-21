@@ -32,6 +32,12 @@
         width: 100%;
     }
 
+    .chat-content .mobile_dtu_logo {
+        display: block;
+        display: flex;
+        justify-content: center;
+    }
+
     .chat-list {
         height: 70%;
     }

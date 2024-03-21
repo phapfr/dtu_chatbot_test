@@ -148,6 +148,14 @@ a {
     overflow: auto;
 }
 
+.chat-content .mobile_dtu_logo {
+    display: none;
+}
+
+.chat-content .mobile_dtu_logo img {
+    width: 200px;
+}
+
 .chat-content .header {
     font-size: 3.5rem;
     font-weight: 800;
