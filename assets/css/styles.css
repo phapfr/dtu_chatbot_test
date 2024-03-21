@@ -164,7 +164,7 @@ a {
 }
 
 .chat-list .user,
-.bot {
+.chat-list .bot {
     display: flex;
     align-items: center;
     margin: 10px 0;
@@ -344,15 +344,14 @@ a {
 
 /* ----- forgot-password-out ----- */
 .forgot-password-out {
-    display: inline-block;
     display: flex;
     align-items: center;
+    width: fit-content;
     gap: 10px;
     padding: 0 10px;
     margin: 20px 0;
     font-size: 1.8rem;
     font-weight: 600;
-    line-height: 1.5;
     color: #111;
 }
 
