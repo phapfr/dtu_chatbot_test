@@ -38,6 +38,10 @@
         justify-content: center;
     }
 
+    .chat-content .mobile_dtu_logo img {
+        width: 200px;
+    }
+
     .chat-list {
         height: 70%;
     }
