@@ -29,6 +29,10 @@
         display: none;
     }
 
+    .sidebar.active {
+        visibility: visible;
+    }
+
     .chat-content {
         width: 100%;
     }

@@ -335,6 +335,10 @@ a {
     color: #fff;
 }
 
+.guest-sign-in-btn {
+    background-color: #aaa;
+}
+
 .sign-in-up-box .desc {
     font-size: 1.4rem;
     font-weight: 500;
