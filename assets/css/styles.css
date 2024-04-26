@@ -416,3 +416,22 @@ a {
     line-height: 1.4;
     color: #fff;
 }
+
+.user-management .container .table td:last-child {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.user-management .container .table .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #2ecc71;
+    border-radius: 5px;
+}
+
+.user-management .container .table .btn-delete {
+    background-color: #e74c3c;
+}
