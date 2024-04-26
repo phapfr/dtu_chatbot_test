@@ -391,16 +391,29 @@ a {
     text-align: center;
 }
 
-.user-management .container table {
-    font-size: 1.6rem;
+.user-management .container {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
 }
 
-.user-management .container table th,
-.user-management .container table td {
+.user-management .container .table {
+    font-size: 1.6rem;
+    width: 1000px;
+}
+
+.user-management .container .table th,
+.user-management .container .table td {
     border: 1px solid #ccc;
     padding: 5px;
 }
 
-.user-management .container table th {
+.user-management .container .table th {
     white-space: nowrap;
+    background-color: #108cff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #fff;
 }
