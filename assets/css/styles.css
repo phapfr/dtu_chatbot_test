@@ -406,6 +406,7 @@ a {
 .user-management .container .table td {
     border: 1px solid #ccc;
     padding: 5px;
+    vertical-align: middle;
 }
 
 .user-management .container .table th {
