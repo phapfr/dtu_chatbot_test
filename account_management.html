@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>ChatDTU</title>
+        <script
+            src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css"
+            rel="stylesheet"
+        />
+
+        <link href="assets/css/boostrap_styles.css" rel="stylesheet" />
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="#!">ChatDTU</a>
+            <!-- Sidebar Toggle-->
+            <button
+                class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+                id="sidebarToggle"
+                href="#!"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Navbar Search-->
+            <form
+                class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0"
+            ></form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        id="navbarDropdown"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        ><i class="fas fa-user fa-fw"></i
+                    ></a>
+                    <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarDropdown"
+                    >
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#!">Activity Log</a>
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav
+                    class="sb-sidenav accordion sb-sidenav-light"
+                    id="sidenavAccordion"
+                >
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Menu</div>
+                            <a class="nav-link" href="#!">
+                                <div class="sb-nav-link-icon">
+                                    <i class="fas fa-tachometer-alt"></i>
+                                </div>
+                                Quản Lý Tài Khoản
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h1 class="my-4">Quản Lý Tài Khoản Người Dùng</h1>
+
+                        <div class="card mb-4">
+                            <div class="card-header">
+                                <i class="fas fa-table me-1"></i>
+                                <b>Danh Sách Tài Khoản Người Dùng</b>
+                            </div>
+                            <div class="card-body">
+                                <table id="datatablesSimple">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Tên Người Dùng</th>
+                                            <th>Email</th>
+                                            <th>Phân Quyền</th>
+                                            <th>Mật Khẩu</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Tên Người Dùng</th>
+                                            <th>Email</th>
+                                            <th>Phân Quyền</th>
+                                            <th>Mật Khẩu</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Nguyễn Van A</td>
+                                            <td>nguyenvana@gmail.com</td>
+                                            <td>User</td>
+                                            <td>123abc#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Trần Thị B</td>
+                                            <td>tranthib@gmail.com</td>
+                                            <td>User</td>
+                                            <td>456def#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Lê Văn C</td>
+                                            <td>levanc@gmail.com</td>
+                                            <td>User</td>
+                                            <td>789ghi#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Phạm Thị D</td>
+                                            <td>phamthid@gmail.com</td>
+                                            <td>User</td>
+                                            <td>012jkl#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Hoàng Văn E</td>
+                                            <td>hoangvane@gmail.com</td>
+                                            <td>User</td>
+                                            <td>345mno#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Nguyễn Thị F</td>
+                                            <td>nguyenthif@gmail.com</td>
+                                            <td>User</td>
+                                            <td>678pqr#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Trần Văn G</td>
+                                            <td>tranvang@gmail.com</td>
+                                            <td>User</td>
+                                            <td>901stu#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Lê Thị H</td>
+                                            <td>lethih@gmail.com</td>
+                                            <td>User</td>
+                                            <td>234vwx#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Phạm Văn I</td>
+                                            <td>phamvani@gmail.com</td>
+                                            <td>User</td>
+                                            <td>567yza#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Hoàng Thị K</td>
+                                            <td>hoangthik@gmail.com</td>
+                                            <td>User</td>
+                                            <td>890bcd#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Nguyễn Văn L</td>
+                                            <td>nguyenvanl@gmail.com</td>
+                                            <td>User</td>
+                                            <td>123efg#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Trần Thị M</td>
+                                            <td>tranthim@gmail.com</td>
+                                            <td>User</td>
+                                            <td>456hij#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>13</td>
+                                            <td>Lê Văn N</td>
+                                            <td>levann@gmail.com</td>
+                                            <td>User</td>
+                                            <td>789klm#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>14</td>
+                                            <td>Phạm Thị O</td>
+                                            <td>phamthio@gmail.com</td>
+                                            <td>User</td>
+                                            <td>012nop#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>15</td>
+                                            <td>Hoàng Văn P</td>
+                                            <td>hoangvanp@gmail.com</td>
+                                            <td>User</td>
+                                            <td>345pqr#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>16</td>
+                                            <td>Nguyễn Thị Q</td>
+                                            <td>nguyenthiq@gmail.com</td>
+                                            <td>User</td>
+                                            <td>678stu#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>17</td>
+                                            <td>Trần Văn R</td>
+                                            <td>tranvanr@gmail.com</td>
+                                            <td>User</td>
+                                            <td>901uvw#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>18</td>
+                                            <td>Lê Thị S</td>
+                                            <td>lethis@gmail.com</td>
+                                            <td>User</td>
+                                            <td>234wxy#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>19</td>
+                                            <td>Phạm Văn T</td>
+                                            <td>phamvant@gmail.com</td>
+                                            <td>User</td>
+                                            <td>567yzc#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>20</td>
+                                            <td>Hoàng Thị U</td>
+                                            <td>hoangthiu@gmail.com</td>
+                                            <td>User</td>
+                                            <td>890zad#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>21</td>
+                                            <td>Nguyễn Văn X</td>
+                                            <td>nguyenvanx@gmail.com</td>
+                                            <td>User</td>
+                                            <td>123efh#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>22</td>
+                                            <td>Trần Thị Y</td>
+                                            <td>tranthiy@gmail.com</td>
+                                            <td>User</td>
+                                            <td>456ijk#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>23</td>
+                                            <td>Lê Văn Z</td>
+                                            <td>levanz@gmail.com</td>
+                                            <td>User</td>
+                                            <td>789lmn#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>24</td>
+                                            <td>Phạm Thị AA</td>
+                                            <td>phamthiaa@gmail.com</td>
+                                            <td>User</td>
+                                            <td>012opq#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>25</td>
+                                            <td>Hoàng Văn BB</td>
+                                            <td>hoangvanbb@gmail.com</td>
+                                            <td>User</td>
+                                            <td>345qrs#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>26</td>
+                                            <td>Nguyễn Thị CC</td>
+                                            <td>nguyenthicc@gmail.com</td>
+                                            <td>User</td>
+                                            <td>678tuv#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>27</td>
+                                            <td>Trần Văn DD</td>
+                                            <td>tranvandd@gmail.com</td>
+                                            <td>User</td>
+                                            <td>901uvw#</td>
+                                            <td>
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-info"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#editModal"
+                                                    >Chỉnh Sửa</a
+                                                >
+                                                <a
+                                                    type="button"
+                                                    href="#!"
+                                                    class="btn btn-danger"
+                                                    data-bs-toggle="modal"
+                                                    data-bs-target="#deleteModal"
+                                                    >Xóa</a
+                                                >
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <!-- Edit Modal -->
+                                <div
+                                    class="modal fade"
+                                    id="editModal"
+                                    tabindex="-1"
+                                    aria-labelledby="editModalLabel"
+                                    aria-hidden="true"
+                                >
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1
+                                                    class="modal-title fs-5"
+                                                    id="editModalLabel"
+                                                >
+                                                    Chỉnh Sửa Thông Tin Tài
+                                                    Khoản
+                                                </h1>
+                                                <button
+                                                    type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"
+                                                ></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-group">
+                                                    <label
+                                                        class="form-label"
+                                                        for=""
+                                                        >ID</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label
+                                                        class="form-label"
+                                                        for=""
+                                                        >Tên Người Dùng</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label
+                                                        class="form-label"
+                                                        for=""
+                                                        >Email</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label
+                                                        class="form-label"
+                                                        for=""
+                                                        >Phân Quyền</label
+                                                    >
+                                                    <select
+                                                        class="form-control"
+                                                        name=""
+                                                        id=""
+                                                    >
+                                                        <option value="0">
+                                                            User
+                                                        </option>
+                                                        <option value="1">
+                                                            Admin
+                                                        </option>
+                                                        <option value="2">
+                                                            Moderator
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group mt-3">
+                                                    <label
+                                                        class="form-label"
+                                                        for=""
+                                                        >Mật Khẩu</label
+                                                    >
+                                                    <input
+                                                        type="text"
+                                                        class="form-control"
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-secondary"
+                                                    data-bs-dismiss="modal"
+                                                >
+                                                    Close
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-primary"
+                                                >
+                                                    Lưu
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Delete Modal -->
+                                <div
+                                    class="modal fade"
+                                    id="deleteModal"
+                                    tabindex="-1"
+                                    aria-labelledby="deleteModalLabel"
+                                    aria-hidden="true"
+                                >
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1
+                                                    class="modal-title fs-5"
+                                                    id="deleteModalLabel"
+                                                >
+                                                    Xóa Tài Khoản
+                                                </h1>
+                                                <button
+                                                    type="button"
+                                                    class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"
+                                                ></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Bạn chắc chắn muốn xóa tài khoản
+                                                này? <br />
+                                                <span
+                                                    class="text-danger fw-bold"
+                                                    >Lưu ý: Không thể hoàn
+                                                    tác!</span
+                                                >
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-secondary"
+                                                    data-bs-dismiss="modal"
+                                                >
+                                                    Close
+                                                </button>
+                                                <button
+                                                    type="button"
+                                                    class="btn btn-primary"
+                                                >
+                                                    Xóa
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid px-4">
+                        <div
+                            class="d-flex align-items-center justify-content-between small"
+                        >
+                            <div class="text-muted">
+                                Copyright &copy; Your Website 2024
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/scripts.js"></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="assets/js/datatables-simple-demo.js"></script>
+    </body>
+</html>
